@@ -36,9 +36,6 @@ def update(sno):
     todo = Todo.query.filter_by(sno=sno).first()
     return render_template('update.html', todo=todo)
 
-    # db.session.update(todo)
-    # db.session.commit()
-    # return redirect("/")
 
 
 @app.route('/delete/<int:sno>')
